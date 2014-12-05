@@ -1,0 +1,22 @@
+Install: 
+	$ git config --global user.name "Your name"
+	$ config --global user.email "email@example.com"
+	
+Create a repository
+	$ mkdir learngit
+	$ cd learngit
+	$ pwd
+	
+	$ git init
+	$ git add "test.txt"
+	$ git commit -m "changes in submit"
+
+Time Machine
+	$ git status 
+	$ git diff	//check the difference between two versions.
+	
+	$ git log (--pretty=oneline)	//show all the submit history.
+	$ git reset --hard HEAD^	//HEAD expresses the current version, HEAD^ expresses previous version. HEAD^100 expresses the last 100 version, etc.
+	$ git reset --hard commit id	//take you to any version if you know the commit id.
+	$ git reflog	//show all the commit id.
+	
