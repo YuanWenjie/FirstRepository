@@ -20,3 +20,19 @@ Time Machine
 	$ git reset --hard commit id	//take you to any version if you know the commit id.
 	$ git reflog	//show all the commit id.
 	
+	$ cat readme.txt	//open "readme.txt" in Git Bash.
+	$ git checkout -- file	//revoke all the modification in working directory.
+	$ git reset HEAD file	//recall all the modification in stage.
+	
+	$ rm file	//delete file in working directory.
+	$ git rm file 
+	$ git commit -m "delete a file in the repository"	//The effect is in the commit.
+	$ git checkout -- file	//The file in repository will replace the version in working directory.
+
+Remote Repository
+	$ ssh-keygen -t rsa -C "email@example.com"	//create SSH Key.
+	$ git remote add origin git@github.com:name/learngit.git	//relate local to remote
+	$ git push -u origin master	//"-u" can be omitted in later push.
+	
+	$ git clone git@github.com:name/repositoryname.git	//clone a repository from remote to local
+	
